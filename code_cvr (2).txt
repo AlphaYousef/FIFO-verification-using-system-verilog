@@ -1,0 +1,130 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /FIFO_coverage_pkg/FIFO_coverage/cvr_status      100.0%        100    Covered              
+    covered/total bins:                                    43         43                      
+    missing/total bins:                                     0         43                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cvr_status::rd_enable                   100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     48169          1    Covered              
+        bin auto[1]                                     46328          1    Covered              
+    Coverpoint cvr_status::wr_enable                   100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     46357          1    Covered              
+        bin auto[1]                                     48140          1    Covered              
+    Coverpoint cvr_status::overflow_w                  100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     89215          1    Covered              
+        bin auto[1]                                      5282          1    Covered              
+    Coverpoint cvr_status::underflow_w                 100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     89304          1    Covered              
+        bin auto[1]                                      5193          1    Covered              
+    Coverpoint cvr_status::wr_acknowledge              100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     51639          1    Covered              
+        bin auto[1]                                     42858          1    Covered              
+    Coverpoint cvr_status::full_l                      100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     84050          1    Covered              
+        bin auto[1]                                     10447          1    Covered              
+    Coverpoint cvr_status::almostfull_l                100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     84098          1    Covered              
+        bin auto[1]                                     10399          1    Covered              
+    Coverpoint cvr_status::empty_y                     100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     84200          1    Covered              
+        bin auto[1]                                     10297          1    Covered              
+    Coverpoint cvr_status::almostempty_y               100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                     83577          1    Covered              
+        bin auto[1]                                     10920          1    Covered              
+    Cross cvr_status::rd_enable_with_empty             100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[0],auto[0]>                           48005          1    Covered              
+        bin <auto[1],auto[0]>                           36195          1    Covered              
+        bin <auto[0],auto[1]>                             164          1    Covered              
+        bin <auto[1],auto[1]>                           10133          1    Covered              
+    Cross cvr_status::rd_enable_with_almostempty       100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[0],auto[0]>                           42617          1    Covered              
+        bin <auto[1],auto[0]>                           40960          1    Covered              
+        bin <auto[0],auto[1]>                            5552          1    Covered              
+        bin <auto[1],auto[1]>                            5368          1    Covered              
+    Cross cvr_status::rd_enable_with_underflow         100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin rd_on_under_off                             41135          1    Covered              
+        bin rd_off_under_off                            48169          1    Covered              
+        bin rd_on_under_on                               5193          1    Covered              
+    Cross cvr_status::wr_enable_with_full              100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[0],auto[0]>                           46276          1    Covered              
+        bin <auto[1],auto[0]>                           37774          1    Covered              
+        bin <auto[0],auto[1]>                              81          1    Covered              
+        bin <auto[1],auto[1]>                           10366          1    Covered              
+    Cross cvr_status::wr_enable_with_almostfull        100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[0],auto[0]>                           41255          1    Covered              
+        bin <auto[1],auto[0]>                           42843          1    Covered              
+        bin <auto[0],auto[1]>                            5102          1    Covered              
+        bin <auto[1],auto[1]>                            5297          1    Covered              
+    Cross cvr_status::wr_enable_with_overflow          100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin wr_on_over_off                              42858          1    Covered              
+        bin wr_off_over_off                             46357          1    Covered              
+        bin wr_on_over_on                                5282          1    Covered              
+    Cross cvr_status::wr_enable_with_wr_acknowledge 
+                                                       100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin wr_on_wr_acknowledge_off                     5282          1    Covered              
+        bin wr_off_wr_acknowledge_off                   46357          1    Covered              
+        bin wr_on_wr_acknowledge_on                     42858          1    Covered              
+ CLASS FIFO_coverage
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+-------------------------------------------------------
+Name                 File(Line)           Failure Pass 
+                                          Count   Count 
+-------------------------------------------------------
+/top/TB/#ublk#182146786#26/immed__27
+                     FIFO_tb.bsv(27)            0     1
+/top/TB/#ublk#182146786#40/immed__41
+                     FIFO_tb.bsv(41)            0     1

@@ -1,0 +1,15 @@
+vlib work
+vlog FIFO_if_pkg.sv
+vlog FIFO.sv
+vlog FIFO_transaction.bsv
+vlog FIFO_scoreboard_pkg.bsv
+vlog FIFO_coverage.bsv
+vlog FIFO_monitor.sv
+vlog FIFO_tb.bsv
+vlog top.bsv
+vsim -voptargs=+acc work.top -cover
+add wave *
+coverage save FIFO_tb.ucdb -onexit
+run -all
+quit -sim
+ vcover report ALU_tb.ucdb -details -all -output code_cvr.txt
